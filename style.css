@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    background-image: url(images/imae.jpg);
+    background-size: cover;
+}
+
+.navbar{
+  position: absolute; 
+  height: 500px;
+  width: 200px;
+  background-color: transparent;
+  border: 24px;
+  padding: 8px;
+  border-style: solid;
+  border-color: rgba(55, 0, 255, 0.527);
+  border-radius: 16px;
+  background-image: none; 
+  transform: translate(-110%);
+  transition: all .3s linear;  
+}
+#checkbox{
+  display: none;
+  cursor: pointer;
+}
+
+#checkbox:checked ~ label.hamburger {
+  display: none;
+}
+
+
+#checkbox:checked ~ .navbar {
+  transform: translate(0%);
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+}
+
+.hamburger1{
+  display: block;
+  cursor: pointer;
+  position: relative;
+  height: 50px;
+  width: 30px;
+  right: 0%;
+
+}
+
+
+a{
+  text-decoration: none;
+  background-color: transparent;
+  height: 50px;
+  width: 150px;
+  border: 2px;
+  padding: 8px;
+  border: 2px;
+  border-radius: 16px;
+  transition: all .5s linear;
+  font-size: large;
+  color: rgb(2, 78, 145);
+}
+
+li{
+  text-decoration: none;
+  border-style: solid;
+  border-color: rgba(80, 66, 133, 0.527);
+  border-width:2px;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 24px;
+  list-style-type: none;
+
+}
+
+.list{
+  position: absolute;
+  background-color: transparent;
+  height: 20px;
+  width: 20px;
+  border-width:2px;
+  padding: 10px;
+  margin: 20px;
+  border-style: solid;
+  transition: all .5s linear;
+  margin: 10px;
+  font-size: large;
+  color: rgb(15, 126, 223);
+  
+}
+
+
+.social{
+  background-color: transparent;
+
+  border-style: solid;
+  transition: all .5s linear;
+  margin: 10px;
+  font-size: large;
+  color: aliceblue;
+  display: flex;
+}
+
+
+
+
+
+/* Hide the checkbox */
+#toggle {
+  display: none;
+}
+
+/* Style the label (hamburger icon) */
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+/* Style the navbar */
+nav {
+  background-color: #333;
+  padding: 10px;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+}
+
+/* Show the navbar when checkbox is checked */
+#toggle:checked ~ label.hamburger {
+  display: none; /* Hide the hamburger button */
+}
+
+#toggle:checked ~ nav {
+  transform: translateX(0);
+}
+
+/* Additional styles for navbar links */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
